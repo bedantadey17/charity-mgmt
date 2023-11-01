@@ -40,7 +40,7 @@ def make_donation(donor_id, amount, donation_date):
     print("")
     print("")
 
-def delete_user(donor_id):
+def delete_donor(donor_id):
     '''Deletes a donor'''
     delete_donations_query = "DELETE FROM donations WHERE donor_id = %s"
     cursor.execute(delete_donations_query, (donor_id,))

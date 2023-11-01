@@ -7,7 +7,8 @@ cursor = mycon.cursor()
 
 
 # Welcome Screen
-print("Welcome to CDMS of GRAY MATTER CHARITIES.")
+print("Welcome to CDMS!")
+print("Developed by Bedanta Dey | V.0.0.1")
 print("Please proceed with appropriate inputs to continue.")
 print("")
 
@@ -30,7 +31,7 @@ while True:
             print("")
             print("")
             while True:
-                print("\nGRAY MATTER Donation Management Menu:")
+                print("\nCDMS Menu:")
                 print("1. Add Donor")
                 print("2. Make Donation")
                 print("3. View Donors")
@@ -60,7 +61,7 @@ while True:
                 
                 elif option == "5":
                     donor_id = input("Enter donor's ID: ")
-                    sqlf.delete_user(int(donor_id))
+                    sqlf.delete_donor(int(donor_id))
 
                 elif option == "6":
                     print("Logged out. Goodbye!")
